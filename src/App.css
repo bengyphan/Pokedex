@@ -1,3 +1,11 @@
+.Pokedex {
+	margin: 0 20px;
+	padding: 0;
+}
 .Pokedex-title {
 	text-align: center;
+}
+.Pokecard {
+	display: inline-block;
+	width: 80%;
 }
