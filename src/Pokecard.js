@@ -1,15 +1,19 @@
+import React from 'react';
 import './Pokecard.css';
-export default function Pokecard({ pokedex }) {
-	return pokedex.map(pokemon => (
+
+const POKE_API =
+	'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
+
+export default function Pokecard(props) {
+	let imgSrc = `${POKE_API}${props.id}.png`;
+	return (
 		<div className="Pokecard">
 			<div className="Pokecard-card">
-				<h3 className="Pokecard-name">{pokemon.name}</h3>
-				<img
-					src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-				></img>
-				<p>Type: {pokemon.type}</p>
-				<p>EXP: {pokemon.base_experience}</p>
+				<h3 className="Pokecard-name">{props.name}</h3>
+				<img src={imgSrc}></img>
+				<p>Type: {props.type}</p>
+				<p>EXP: {props.base_experience}</p>
 			</div>
 		</div>
-	));
+	);
 }

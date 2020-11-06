@@ -1,0 +1,14 @@
+.Pokedex-title {
+	text-align: center;
+	color: #d3d3d3;
+}
+
+.winMessage {
+	text-transform: capitalize;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+}
