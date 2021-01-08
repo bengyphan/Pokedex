@@ -10,7 +10,7 @@ export default function Pokecard(props) {
 		<div className="Pokecard">
 			<div className="Pokecard-card">
 				<h3 className="Pokecard-name">{props.name}</h3>
-				<img src={imgSrc}></img>
+				<img src={imgSrc} alt={props.name}></img>
 				<p>Type: {props.type}</p>
 				<p>EXP: {props.base_experience}</p>
 			</div>
